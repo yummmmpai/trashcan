@@ -69,13 +69,6 @@ void setup() {
 
   randomSeed(analogRead(A0));
  
-  // enable pull-up resistors on switch pins (analog inputs)
-  //digitalWrite(14, HIGH);
-  digitalWrite(15, HIGH);
-  digitalWrite(16, HIGH);
-  digitalWrite(17, HIGH);
-  digitalWrite(18, HIGH);
-  digitalWrite(19, HIGH);
  
   //  if (!card.init(true)) { //play with 4 MHz spi if 8MHz isn't working for you
   if (!card.init()) {         //play with 8 MHz spi (default faster!)  
